@@ -1,0 +1,23 @@
+pipeline {
+  agent {
+    node {
+      label 'master'
+    }
+
+  }
+    
+  stages {
+    stage("Build the Project"){
+     steps {
+     	bat label: '', script: '''echo "Build the Project"'''
+     }
+    }	  
+  }
+ // post {
+  //success{
+   	
+  // }
+   
+  //  }
+}
+
